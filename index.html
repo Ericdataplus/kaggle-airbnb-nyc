@@ -746,17 +746,14 @@
 
     <!-- Lightbox Modal -->
     <div class="lightbox" id="lightbox">
-        <span class="lightbox-close" id="lightbox-close">&times;</span>
         <img id="lightbox-img" src="" alt="Expanded view">
     </div>
 
     <script>
-        // Lightbox functionality
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = document.getElementById('lightbox-img');
-        const lightboxClose = document.getElementById('lightbox-close');
 
-        // Add click handlers to all viz images
+        // Click image to open
         document.querySelectorAll('.viz-item img').forEach(img => {
             img.addEventListener('click', () => {
                 lightboxImg.src = img.src;
@@ -765,22 +762,13 @@
             });
         });
 
-        // Close on X button
-        lightboxClose.addEventListener('click', (e) => {
-            e.stopPropagation();
+        // Click anywhere to close
+        lightbox.addEventListener('click', () => {
             lightbox.classList.remove('active');
             document.body.style.overflow = 'auto';
         });
 
-        // Close on background click
-        lightbox.addEventListener('click', (e) => {
-            if (e.target === lightbox) {
-                lightbox.classList.remove('active');
-                document.body.style.overflow = 'auto';
-            }
-        });
-
-        // Close on Escape key
+        // Escape key to close
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' && lightbox.classList.contains('active')) {
                 lightbox.classList.remove('active');
