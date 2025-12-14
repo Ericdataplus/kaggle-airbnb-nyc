@@ -1,0 +1,15 @@
+# Data files (too large for GitHub)
+*.csv
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Environment
+.env
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
