@@ -356,28 +356,28 @@
     <!-- Hero - ML Focused -->
     <section class="hero">
         <div class="hero-content">
-            <div class="hero-badge">Machine Learning + Multi-Source Analysis</div>
+            <div class="hero-badge">2019-2025 Multi-Year Analysis + Machine Learning</div>
             <h1>NYC Airbnb<br>Market Intelligence</h1>
             <p class="hero-subtitle">
-                <strong>5 ML algorithms</strong> applied to <strong>151K listings</strong> from 2 Kaggle datasets.
-                Price prediction, market segmentation, anomaly detection, and more.
+                <strong>6 years of data (2019-2025)</strong> analyzed with <strong>5 ML algorithms</strong>.
+                3 data sources combined. Inside Airbnb Oct 2025 data included.
             </p>
 
             <div class="ml-highlights">
                 <div class="ml-chip">
-                    <strong style="color: var(--accent-gold);">$49</strong>
-                    <span style="color: var(--text-gray);">Prediction MAE</span>
+                    <strong style="color: var(--accent-manhattan);">-57%</strong>
+                    <span style="color: var(--text-gray);">Listings (6yr)</span>
+                </div>
+                <div class="ml-chip">
+                    <strong style="color: var(--accent-green);">+54%</strong>
+                    <span style="color: var(--text-gray);">Price (6yr)</span>
                 </div>
                 <div class="ml-chip">
                     <strong style="color: var(--accent-brooklyn);">5</strong>
-                    <span style="color: var(--text-gray);">Market Segments</span>
+                    <span style="color: var(--text-gray);">ML Algorithms</span>
                 </div>
                 <div class="ml-chip">
-                    <strong style="color: var(--accent-manhattan);">2,433</strong>
-                    <span style="color: var(--text-gray);">Anomalies Found</span>
-                </div>
-                <div class="ml-chip">
-                    <strong style="color: var(--accent-green);">12</strong>
+                    <strong style="color: var(--accent-gold);">13</strong>
                     <span style="color: var(--text-gray);">Visualizations</span>
                 </div>
             </div>
@@ -436,7 +436,28 @@
         </div>
     </div>
 
-    <!-- Price Prediction Model - LEAD -->
+    <!-- 2019 vs 2025 Year-Over-Year Analysis - LEAD -->
+    <section class="section">
+        <div class="section-header">
+            <h2 style="color: var(--accent-manhattan);">6-Year Market Evolution (2019 → 2025)</h2>
+            <p>Inside Airbnb data reveals dramatic market transformation</p>
+        </div>
+        <div class="viz-showcase">
+            <div class="viz-item featured">
+                <img src="graphs/13_year_comparison.png" alt="2019 vs 2025 Comparison">
+                <div class="viz-caption">
+                    <div class="viz-icon" style="background: rgba(255, 107, 107, 0.2); color: var(--accent-manhattan);">
+                        6Y</div>
+                    <div>
+                        <h3>Listings: 48,884 → 21,110 (-57%) | Prices: $153 → $235 (+54%)</h3>
+                        <p>NYC regulations drastically reduced supply, prices surged</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Prediction Model -->
     <section class="section">
         <div class="section-header">
             <h2 style="color: var(--accent-gold);">Price Prediction Model</h2>
@@ -533,22 +554,27 @@
 
     <!-- Data Sources Banner -->
     <div class="banner" style="background: linear-gradient(90deg, rgba(78, 205, 196, 0.1), rgba(255, 107, 107, 0.1));">
-        <h3 style="color: var(--accent-green);">Multi-Source Data Integration</h3>
+        <h3 style="color: var(--accent-green);">3 Data Sources Combined (2019-2025)</h3>
         <div class="card-row">
             <div class="card">
-                <h4 style="color: var(--accent-brooklyn);">NYC Airbnb 2019</h4>
+                <h4 style="color: var(--accent-brooklyn);">Kaggle 2019</h4>
                 <p>dgomonov</p>
                 <div class="big" style="color: var(--accent-brooklyn);">48,895</div>
             </div>
             <div class="card">
-                <h4 style="color: var(--accent-manhattan);">Airbnb Open Data</h4>
+                <h4 style="color: var(--accent-manhattan);">Kaggle Extended</h4>
                 <p>arianazmoudeh</p>
                 <div class="big" style="color: var(--accent-manhattan);">102,599</div>
             </div>
             <div class="card">
-                <h4 style="color: var(--accent-gold);">Combined Total</h4>
-                <p>Multi-source</p>
-                <div class="big" style="color: var(--accent-gold);">151,494</div>
+                <h4 style="color: var(--accent-green);">Inside Airbnb 2025</h4>
+                <p>Oct 2025</p>
+                <div class="big" style="color: var(--accent-green);">36,111</div>
+            </div>
+            <div class="card">
+                <h4 style="color: var(--accent-gold);">Total Records</h4>
+                <p>Multi-year</p>
+                <div class="big" style="color: var(--accent-gold);">187K+</div>
             </div>
         </div>
     </div>
@@ -643,8 +669,8 @@
 
     <!-- Footer -->
     <footer>
-        <h3>ML-Powered Market Intelligence</h3>
-        <p style="color: var(--text-gray);">5 algorithms | 2 data sources | 12 visualizations</p>
+        <h3>ML-Powered Market Intelligence (2019-2025)</h3>
+        <p style="color: var(--text-gray);">5 algorithms | 3 data sources | 13 visualizations | 6-year analysis</p>
 
         <div class="footer-links">
             <a href="https://github.com/Ericdataplus/kaggle-airbnb-nyc" class="footer-link" target="_blank">
@@ -655,9 +681,10 @@
                 View Code
             </a>
             <a href="https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data" class="footer-link"
-                target="_blank">Dataset 1</a>
+                target="_blank">Kaggle 2019</a>
             <a href="https://www.kaggle.com/datasets/arianazmoudeh/airbnbopendata" class="footer-link"
-                target="_blank">Dataset 2</a>
+                target="_blank">Kaggle Extended</a>
+            <a href="http://insideairbnb.com/new-york-city/" class="footer-link" target="_blank">Inside Airbnb 2025</a>
             <a href="https://github.com/Ericdataplus" class="footer-link" target="_blank">Ericdataplus</a>
         </div>
 
